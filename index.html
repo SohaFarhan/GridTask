@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Grid Task</title>
+    <style>
+        #parent{
+            width:700px;
+            background-color: rgb(225, 128, 128);
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 100px 100px 100px;
+            grid-gap: 10px;
+            padding: 20px;
+        }
+        .items{
+               background-color: rgb(255, 199, 199);
+               font-size: 40px;
+               text-align: center;
+               padding-top: 23px;
+        }
+        #i1{
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 4;
+            grid-column-end: 5;
+        }
+        #i12{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 2 ;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="i1" class="items">1</div>
+        <div id="i2" class="items">2</div>
+        <div id="i3" class="items">3</div>
+        <div id="i4" class="items">4</div>
+        <div id="i5" class="items">5</div>
+        <div id="i6" class="items">6</div>
+        <div id="i7" class="items">7</div>
+        <div id="i8" class="items">8</div>
+        <div id="i9" class="items">9</div>
+        <div id="i10" class="items">10</div>
+        <div id="i11" class="items">11</div>
+        <div id="i12" class="items">12</div>
+    </div>
+</body>
+</html>
